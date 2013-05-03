@@ -6,7 +6,7 @@
  * Add or override Backbone.js functionality, for compatibility with django-tastypie.
  * Depends on Backbone (and thus on Underscore as well): https://github.com/documentcloud/backbone.
  */
-(function( undefined ) {
+(function( $ ) {
 	"use strict";
 
 	// Backbone and underscore noConflict support. Save local reference to _ and Backbone objects.
@@ -163,4 +163,4 @@
 	var addSlash = function( str ) {
 		return str + ( ( str.length > 0 && str.charAt( str.length - 1 ) === '/' ) ? '' : '/' );
 	};
-})();
+})(PageBuilder.$);
